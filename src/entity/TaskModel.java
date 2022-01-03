@@ -1,15 +1,27 @@
 package entity;
 
 
+import java.util.Collection;
 import java.util.Date;
 
-public class Task {
-    private int    id;
-    private double budget;
-    private String name;
-    private Date   deadline;
-    private String status;
-    private String explanation;
+public class TaskModel {
+
+    //TaskModel task = new TaskModel();
+    private int                   id;
+    private double                budget;
+    private String                name;
+    private Date                  deadline;
+    private String                status;
+    private String                explanation;
+    private Collection<TaskModel> taskModels;
+
+    public Collection<TaskModel> getTasks() {
+        return this.taskModels;
+    }
+
+    public void setTasks(final Collection<TaskModel> taskModels) {
+        this.taskModels = taskModels;
+    }
 
     public int getId() {
         return this.id;
