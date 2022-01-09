@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="mssql-jdbc-9.4.0.jre11">
     <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sqljdbc_9.4/enu/mssql-jdbc-9.4.0.jre11.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/sqljdbc_9.4/enu/mssql-jdbc-9.4.0.jre11.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../Program Files/sqljdbc_9.4/enu" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -16,6 +16,5 @@
       <root url="file://$PROJECT_DIR$/../../Program Files/sqljdbc_9.4/enu/samples/resultsets" />
       <root url="file://$PROJECT_DIR$/../../Program Files/sqljdbc_9.4/enu/samples/sparse" />
     </SOURCES>
-    <jarDirectory url="file://$PROJECT_DIR$/../../Program Files/sqljdbc_9.4/enu" recursive="false" />
   </library>
 </component>
