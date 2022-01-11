@@ -2,12 +2,12 @@ package taskManagement.io.entity.concretes;
 
 import java.util.Collection;
 
-public class PriviligeModel {
+public class Privilige {
     private int id;
-    private String                name;
-    private Collection<RoleModel> roleModels;
+    private String           name;
+    private Collection<Role> roles;
 
-    public PriviligeModel(String name){
+    public Privilige(String name){
         this.name = name;
         System.out.println("taskManagement.io.Role :" + name + "Worked");
     }
@@ -28,11 +28,11 @@ public class PriviligeModel {
         this.name = name;
     }
 
-    public Collection<RoleModel> getRoles() {
-        return this.roleModels;
+    public Collection<Role> getRoles() {
+        return this.roles;
     }
 
-    public void setRoles(final Collection<RoleModel> roleModels) {
-        this.roleModels = roleModels;
+    public void setRoles(final Collection<Role> roles) {
+        this.roles = roles;
     }
 }

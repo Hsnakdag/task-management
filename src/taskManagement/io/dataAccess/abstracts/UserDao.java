@@ -1,9 +1,10 @@
 package taskManagement.io.dataAccess.abstracts;
 
 import java.util.List;
-import taskManagement.io.entity.concretes.UserModel;
+import taskManagement.io.entity.concretes.User;
 
 public interface UserDao {
-    List<UserModel> getAllUsers();
-    UserModel getUserInfoByID(int id);
+    List<User> getAllUsers();
+    User getUserByID(int id);
+
 }

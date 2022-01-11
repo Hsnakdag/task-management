@@ -1,9 +1,9 @@
 package taskManagement.io.dataAccess.abstracts;
 
 import java.util.List;
-import taskManagement.io.entity.concretes.TaskModel;
+import taskManagement.io.entity.concretes.Task;
 
 public interface TaskDao {
-    List<TaskModel> getAllTasks();
-    TaskModel getTaskById(int id);
+    List<Task> getAllTasks();
+    Task getTaskById(int id);
 }

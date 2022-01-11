@@ -2,20 +2,21 @@ package taskManagement.io.business.concrete;
 
 import taskManagement.io.business.abstracts.ManagerRepository;
 
-public class ManagerController implements ManagerRepository {
+public class ManagerController implements ManagerRepository{
+
 
     @Override
-    public void assignTaskToEmployee(final int userId, final int taskId) {
+    public void assignTaskToUser(final int userId, final int taskId) {
 
     }
 
     @Override
-    public void setBudget(final int taskId) {
+    public void undoAssignedTaskFromUser(final int userId, final int taskId) {
 
     }
 
     @Override
-    public void invitePerson() {
+    public void getReportByUserId(final int id) {
 
     }
 }

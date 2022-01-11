@@ -4,7 +4,7 @@ import java.util.Collection;
 import lombok.Data;
 
 @Data
-public class UserModel {
+public class User {
     private int                   id;
     private String                name;
     private String                lastName;
@@ -14,14 +14,14 @@ public class UserModel {
     private String                salary;
     private String                nationalId;
     private String                workHour;
-    private String                token;
-    private Collection<RoleModel> roleModels;
+    private String           token;
+    private Collection<Role> roles;
 
-    public UserModel() {
+    public User() {
         System.out.println("user model worked");
     }
 
-    public UserModel(final int id, final String name, final String lastName, final String username, final String birthDate, final String hireDate, final String salary, final String nationalId, final String workHour, final Collection<RoleModel> roleModels) {
+    public User(final int id, final String name, final String lastName, final String username, final String birthDate, final String hireDate, final String salary, final String nationalId, final String workHour, final Collection<Role> roles) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
@@ -31,7 +31,7 @@ public class UserModel {
         this.salary = salary;
         this.nationalId = nationalId;
         this.workHour = workHour;
-        this.roleModels = roleModels;
+        this.roles = roles;
     }
 
     public int getId() {
@@ -46,12 +46,12 @@ public class UserModel {
         this.username = username;
     }
 
-    public Collection<RoleModel> getRoleModels() {
-        return this.roleModels;
+    public Collection<Role> getRoles() {
+        return this.roles;
     }
 
-    public void setRoleModels(final Collection<RoleModel> roleModels) {
-        this.roleModels = roleModels;
+    public void setRoles(final Collection<Role> roles) {
+        this.roles = roles;
     }
 
     public void setId(final int id) {

@@ -2,7 +2,7 @@ package taskManagement.io.entity.concretes;
 
 import java.util.Date;
 
-public class TaskModel {
+public class Task {
 
     private int    id;
     private double budget;

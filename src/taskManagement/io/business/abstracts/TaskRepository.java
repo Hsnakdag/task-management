@@ -1,10 +1,10 @@
 package taskManagement.io.business.abstracts;
 
-import taskManagement.io.entity.concretes.TaskModel;
+import taskManagement.io.entity.concretes.Task;
 
 public interface TaskRepository {
-    public boolean create(TaskModel taskModel,String token);
-    public boolean delete(TaskModel taskModel,String token);
-    public boolean update(TaskModel taskModel,String token);
-    public TaskModel getTaskWithId(int id);
+    public boolean create(Task task, String token);
+    public boolean delete(Task task, String token);
+    public boolean update(Task task, String token);
+    public Task getTaskWithId(int id);
 }

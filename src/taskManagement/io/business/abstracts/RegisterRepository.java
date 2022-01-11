@@ -1,5 +1,7 @@
 package taskManagement.io.business.abstracts;
 
+import taskManagement.io.entity.concretes.dto.RegisterFormInfo;
+
 public interface RegisterRepository {
-    boolean register(UserRepository user);
+    public boolean register(RegisterFormInfo info);
 }

@@ -1,27 +1,48 @@
 package taskManagement.io.business.concrete;
 
-import taskManagement.io.business.abstracts.UserRepository;
-import taskManagement.io.entity.concretes.UserModel;
+import java.sql.SQLException;
+import taskManagement.io.dataAccess.concretes.UserModel;
+import taskManagement.io.entity.concretes.Task;
+import taskManagement.io.entity.concretes.User;
+import taskManagement.io.entity.concretes.dto.RegisterFormInfo;
 
-public class UserController implements UserRepository {
+public class UserController{
 
-    @Override
-    public boolean registerUser(final UserModel userModel) {
+    private UserModel userModel;
+
+    public UserController(final UserModel userModel) {
+        this.userModel = userModel;
+    }
+
+    public boolean registerUser(final RegisterFormInfo info) throws SQLException {
+        String fieldNames = "NAME,LASTNAME,USERNAME,Birthdate,HireDate,Salary,NationalID,WorkHour,Password";
+        userModel.insertUser(info,fieldNames);
         return false;
     }
 
-    @Override
-    public boolean deleteUser(final UserModel userModel) {
+
+    public boolean deleteUser(final int userID) {
+        userModel.deleteUser(userID);
         return false;
     }
 
-    @Override
-    public boolean updateUser(final UserModel userModel) {
+
+    public boolean updateUser(final User user) {
+        userModel.updateUser(user);
         return false;
     }
 
-    public boolean update(UserModel userModel){
-        return true;
+
+    public User getUserById(final int userId) {
+        userModel.getUser(userId);
+        return null;
+    }
+
+
+    public Task getUsersTasks(final int userId) {
+        userModel.getUsersTasks(userId);
+
+        return null;
     }
 
 }

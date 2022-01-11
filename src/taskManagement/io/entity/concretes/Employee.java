@@ -1,6 +1,6 @@
 package taskManagement.io.entity.concretes;
 
-public class EmployeeModel {
+public class Employee {
     int    userId;
     int    taskId;
     String name;
@@ -38,7 +38,7 @@ public class EmployeeModel {
         this.lastname = lastname;
     }
 
-    public EmployeeModel(){
+    public Employee(){
 
     }
 }

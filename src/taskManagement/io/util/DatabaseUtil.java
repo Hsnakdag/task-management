@@ -37,3 +37,7 @@ public class DatabaseUtil {
         }
     }
 }
+//            String s = "insert into Users values(?,?,?,?,?,?,?,?,?,?) ";
+//            PreparedStatement statement = con.prepareStatement(s);
+//            statement.setInt(1,(int)Math.random());
+//            statement.setString(2,"asdfad");

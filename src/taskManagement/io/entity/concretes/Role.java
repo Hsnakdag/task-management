@@ -2,10 +2,10 @@ package taskManagement.io.entity.concretes;
 
 import java.util.Collection;
 
-public class RoleModel {
+public class Role {
     private int id;
-    private String                     name;
-    private Collection<PriviligeModel> priviligeModels;
+    private String                name;
+    private Collection<Privilige> priviliges;
 
     public int getId() {
         return this.id;
@@ -23,11 +23,11 @@ public class RoleModel {
         this.name = name;
     }
 
-    public Collection<PriviligeModel> getPriviliges() {
-        return this.priviligeModels;
+    public Collection<Privilige> getPriviliges() {
+        return this.priviliges;
     }
 
-    public void setPriviliges(final Collection<PriviligeModel> priviligeModels) {
-        this.priviligeModels = priviligeModels;
+    public void setPriviliges(final Collection<Privilige> priviliges) {
+        this.priviliges = priviliges;
     }
 }

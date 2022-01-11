@@ -1,6 +1,6 @@
 package taskManagement.io.entity.concretes;
 
-public class ReportModel {
+public class Report {
     int id;
     String feedback;
 
